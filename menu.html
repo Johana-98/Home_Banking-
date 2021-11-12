@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="./styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>homebanking_menu</title>
+	<!--fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<!--stylesheets-->
+	<link rel="stylesheet" href="./estilos.css">
 </head>
+
 <body>
-    <a class="btn" href='#' onclick=";" role="button">
-        Ver saldo actual 
-      </a> 
 
-      <a class="btn" href='#' onclick=";" role="button">
-        Retirar dinero
-      </a>
+	<header>
+		<div class="titulo-container">
+			<div>
+				<h1 class="titulo">Menu Principal</h1>
+			</div>
+			<div>
+				<a href="./index.html"><img src="./home_icon.png.crdownload" alt="logo home"
+						width="20%"> </a>
+			</div>
+		</div>
+		<hr>
+		<br><br>
 
-      <a class="btn" href='#' onclick=";" role="button">
-        Depositar dinero en su cuenta 
-      </a> 
+		<nav class="nav-container">
+			<div class="nav-hijo">
+				<button class="btn" onclick="verSaldo()">Ver saldo</button>
+			</div>
+			<div class="nav-hijo">
+				<button class="btn" onclick="retirarDinero()">retirar dinero</button>
+			</div>
+			<div class="nav-hijo">
+				<button class="btn" onclick="depositarDinero()">depositar</button>
+			</div>
+			<div class="nav-hijo">
+				<button class="btn" onclick="cambiarPassword()">claves</button>
+			</div>
+			<div class="nav-hijo">
 
-      <a class="btn" href='#' onclick=";" role="button">
-        Cambiar su clave 
-      </a> 
+			</div>
 
+		</nav>
+	</header>
 
-    <script src="./app.js"></script>
+	<script src="./app.js"></script>
 </body>
+
 </html>
