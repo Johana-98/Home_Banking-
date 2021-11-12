@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar</title>
-    <link rel="stylesheet" href="./styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>homebanking_home</title>
+	<!--fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<!--stylesheets-->
+	<link rel="stylesheet" href="./estilos.css">
+
 </head>
+
 <body>
+	<h1 class="titulo">Ingreso Clientes</h1>
+	<hr>
+	
+	<form>
+		<h2>Ingrese</h2>
+		<label for="userName">Nombre de usuario:</label>
+		<input type="text" id="userNameLogin">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password" onchange="login()" maxlength="8" id="passwordLogin">
+		<br><br>
+		
+		<button class="btn"> <a href="./menu.html" style="text-decoration: none;">Ingresar</a> </button>
 
-   
+		<h4>¿No tiene usuario? Registrese a continuación</h4>
+		
+		<h2>Registrese</h2>
+		<label for="Name">Nombre:</label>
+		<input type="text" id="NameRegister">
+		<br><br>
+		<label for="surname">Apellido:</label>
+		<input type="text" id="surnameRegister">
+		<br><br>
+		<label for="DNI">DNI:</label>
+		<input type="text" id="dni">
+		<br><br>
+		<label for="userName">Nombre de usuario:</label>
+		<input type="text" id="userNameRegister">
+		<br><br>
+		<label for="password">Password:</label>
+		<input type="password" maxlength="8" id="passwordRegister">
+		<br><br>
+		<button class="btn"> <a href="./menu.html" style="text-decoration: none;">Registrase</a> </button>
 
-    <a class="btn" href='#' onclick="promptIngresar('');" role="button">
-        Iniciar Sesión 
-      </a>
+	</form>
 
-    <script src="./app.js"></script>
+	<script src="./app.js"></script>
 </body>
+
 </html>
